@@ -1,0 +1,12 @@
+ h1{
+                color:#ff0000; /*RGB ff=>Red 00 Green 00 Blue */
+            }
+            h3{
+                color:#cccccc;
+            }
+            a{
+                font-size: 30px;
+                text-decoration: none;/* 連結不要有底線*/
+                /*px 像素(相對) pt dpi 像素 1/72英吋 em 字形主體大小(相對)*/
+            }
+           
