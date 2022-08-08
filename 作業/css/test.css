@@ -2,19 +2,31 @@ body{
     margin: 0; auto;
     height: 100%;
 }
-.info{
-    width: 20%;
-    height:100px;
+#logo-top{
+    height: 80px;
+    min-width: 20px;
+
+}
+.logo{
     float: left;
-    padding: 10px; 
+    margin-left: 3%;
+    width: 10%;
+    height: 10px;
+}
+.info{
+    width:20%;
+    height:200px;
+    float: left;
+    padding: 10px 0px 10px 10px; 
     margin: 20px; 
-    padding-top: 30px;
+    padding-top: 80px;
     padding-left: 30px;
+    back
 }
 .img1{
     width: 4%;
     height: 4px;
     float: right;
     padding-right: 5px;
-    padding-top: 3px;
+    padding-top: 5px;
 }
