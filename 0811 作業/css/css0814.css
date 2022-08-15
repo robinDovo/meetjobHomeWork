@@ -1,0 +1,154 @@
+body{
+    margin: 0; auto;
+    height: 100%;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;/* 連結不要有底線 */
+    font-weight: bold; /* 粗字體 */
+}
+
+#wrapper{
+    min-height: 100%; /* 整個區塊高度為100% */
+    margin-bottom: -100px; /* 等一下 footer 的高度會是 100px */
+}
+#banner{
+    height: 70px;
+    width: 100%;
+}
+#menu{
+    height: 50px;
+    width: 100%;
+    background-color: #DB7318;
+    color: #ffffff;  /* 區塊內的文字為白色 */
+}
+#content{
+    width: 100%;
+    min-height: 300px;
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;  /* 對齊置中 */
+    clear: both; /* 清除float 效果 */
+
+}
+#footer span{
+    font-size: 20px;
+    
+
+}
+#menu ul{   /*此 menu ul 只對menu裡ul 做改變 其他ul則不影響*/
+    margin-left: 18%;
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 20px;
+
+
+}
+#menu li{
+    list-style: none; /* 項目符號 不要出現 */
+    float: left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+#logo{
+    float: left;
+    margin-left: 2em;
+}
+#logo img{
+    width: 30%;
+}
+
+#fb{
+    float: right;
+    margin-right: 1em;
+}
+#fb img{
+    width: 50%;
+}
+#ig{
+    float: right;
+    margin-right: 1em;
+
+}
+#ig img{
+    width: 50%;
+}
+#tw{
+    float: right;
+    
+}
+#tw img{
+    width: 20%;
+}
+
+#lift{
+    float: left;
+    width: 65%;
+
+    min-height: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+#right{
+    float: right;
+    width: 30%;
+
+    min-height: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.above{
+    width: 50%;
+    height: 250px;
+    margin-left:30%;
+
+    border-radius: 15px;
+    
+    
+
+}.above img{
+    width: 80%;
+    height: 200px;
+}
+.above1{
+    width: 50%;
+    height: 250px;
+    
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 30%;
+}
+.above1 img{
+    width: 80%;
+    height: 200px;
+}
+.above2 {
+
+     float: left;
+     border-radius: 15px;
+     height: 20%;
+     width: 30%;
+
+}
+#above1{
+    width: 100%;
+    min-height: 30%;
+    margin-left:30%;
+    margin-top: 1%;
+
+}.above2 img{
+    height: 90%;
+    width: 80%;
+    padding-left: 10%;
+}
