@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <button id="btn">區域的淡入淡出</button>
+        <div id="red" style="width: 100px;height: 100px;background-color: #ff0000;">
+            聯成電腦
+            <br>
+            聯成電腦
+            <br>
+        </div>
+        <div id="green" style="width: 100px;height: 100px;background-color: #00ff00;">
+           
+        </div>
+
+
+    <script>
+        $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("#red").fadeToggle();
+                    $("#green").fadeToggle(5000);
+                })
+            });
+            
+    </script>
+
+    </body>
+</html>
