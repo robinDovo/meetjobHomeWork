@@ -1,0 +1,208 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>作業</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+
+</head>
+
+    <style>
+        body{
+            margin: 0; auto;
+
+            height: 100%;
+            }
+        #wrapper{
+            height: 50px; /* 整個區塊高度為100% */
+            width: 100px; /* 等一下 footer 的高度會是 100px */
+        }
+        #banner{
+            height: 70px;
+            width: 100%;
+             border: 1px solid #ccc;
+        }
+        #menu{
+            text-align: center;
+            height: 50px;
+           
+           
+            padding-left: 30%;
+            
+        }
+        #menulist{
+            position: absolute;
+            height: 70px;
+            margin-left: 50px ;
+
+
+            
+        }
+        #menulist , #menulist ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        #menulist li{
+            float: left;
+
+            
+        }
+        #menulist a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            width: 90px;
+        }
+        #menulist li ul{
+            position: absolute;
+            left: auto;
+            width: 80px;
+            margin-right: 30px;
+        }
+        #img {
+            width: 80%;
+            height: 100%;
+            margin: 20px 30px;
+            padding-top: 20px;
+            
+
+            
+
+        }
+        #content{
+            
+            min-height: 400px;
+            padding-left: 50px;
+            
+
+        }
+        #content button{
+            float: right;
+            
+            margin-right: 50%;
+            
+
+
+        }
+        #footer{
+            
+       
+            
+            
+            padding-top: 5%;
+            padding-left: 30%;
+
+}
+    
+
+    </style>
+    <script>
+        
+        $(document).ready(function(){
+            $("#menulist li ul").hide();
+            $("#menulist li").hover(
+                function(){
+                    $(this).find("ul").slideDown("fast");
+                    $(this).find("a:first").addClass("avtive");
+                },function(){
+                    $(this).find(".listName").fadeOut("fast");
+                    $(this).find("a").removeClass("avtive");
+                })
+        });
+
+        $(document).ready(function(){
+            $("#red").hide();
+            $("#btn").click(function(){
+                $("#red").slideToggle('slow');
+
+            })
+        });
+
+    </script>
+    <script>
+        
+         function showAge(){
+            var age = document.getElementById("age").value;
+            if (age >= 15 && age <= 50){
+                
+            }else{
+                alert("超出年齡範圍");
+            }
+        }
+    </script>
+
+    
+
+    <body>
+        <div id="wrapper">
+
+        </div>
+        <div id="menu">
+            <ul id="menulist">
+                <li><a href="#">人物介紹</a>
+                    <ul class="listName">
+                        <li><a href="#">禹英禑</a></li>
+                        <li><a href="#">人物二</a></li>
+                        <li><a href="#">人物三</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">人物介紹</a>
+                    <ul class="listName">
+                        <li><a href="#">禹英禑</a></li>
+                        <li><a href="#">人物二</a></li>
+                        <li><a href="#">人物三</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">人物介紹</a>
+                    <ul class="listName">
+                        <li><a href="#">禹英禑</a></li>
+                        <li><a href="#">人物二</a></li>
+                        <li><a href="#">人物三</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">人物介紹</a>
+                    <ul class="listName">
+                        <li><a href="#">禹英禑</a></li>
+                        <li><a href="#">人物二</a></li>
+                        <li><a href="#">人物三</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">留言板</a>
+                   
+                </li>
+
+
+            </ul>
+
+        </div>
+
+        <div id="img">
+            <img src="https://cc.tvbs.com.tw/img/upload/2022/07/15/20220715163402-6f372cd1.jpg">
+
+        </div>
+
+        <div id="content">
+
+            <button id="btn">燦爛笑容</button>
+            <div id="red" style="margin: 30px;">
+                <img src="https://image.presslogic.com/kdaily-image.presslogic.com/wp-content/uploads/2022/08/310d9d61.jpg?auto=format&w=718">
+        </div>
+
+        <div id="footer">
+
+            <form onsubmit="showAge()">
+
+                年齡:<input type="text" id="age" name="age"/>
+
+                <button onclick="showAge()">送出</button>
+            
+
+        </div>
+        
+
+    </body>
+</html>
